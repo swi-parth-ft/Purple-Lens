@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		076864AE2C70F12700E423B6 /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = 076864AD2C70F12700E423B6 /* FirebaseAnalytics */; };
 		076864B02C70F12700E423B6 /* FirebaseVertexAI-Preview in Frameworks */ = {isa = PBXBuildFile; productRef = 076864AF2C70F12700E423B6 /* FirebaseVertexAI-Preview */; };
+		076864C22C71069900E423B6 /* DotLottie in Frameworks */ = {isa = PBXBuildFile; productRef = 076864C12C71069900E423B6 /* DotLottie */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 			files = (
 				076864B02C70F12700E423B6 /* FirebaseVertexAI-Preview in Frameworks */,
 				076864AE2C70F12700E423B6 /* FirebaseAnalytics in Frameworks */,
+				076864C22C71069900E423B6 /* DotLottie in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -74,6 +76,7 @@
 			packageProductDependencies = (
 				076864AD2C70F12700E423B6 /* FirebaseAnalytics */,
 				076864AF2C70F12700E423B6 /* FirebaseVertexAI-Preview */,
+				076864C12C71069900E423B6 /* DotLottie */,
 			);
 			productName = "Purple Lens";
 			productReference = 076864992C70F06C00E423B6 /* Purple Lens.app */;
@@ -105,6 +108,7 @@
 			minimizedProjectReferenceProxies = 1;
 			packageReferences = (
 				076864AC2C70F12700E423B6 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+				076864C02C71069900E423B6 /* XCRemoteSwiftPackageReference "dotlottie-ios" */,
 			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 0768649A2C70F06C00E423B6 /* Products */;
@@ -273,7 +277,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 17.6;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -304,7 +308,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 17.6;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -350,6 +354,14 @@
 				minimumVersion = 11.0.0;
 			};
 		};
+		076864C02C71069900E423B6 /* XCRemoteSwiftPackageReference "dotlottie-ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/LottieFiles/dotlottie-ios";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -362,6 +374,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 076864AC2C70F12700E423B6 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
 			productName = "FirebaseVertexAI-Preview";
+		};
+		076864C12C71069900E423B6 /* DotLottie */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 076864C02C71069900E423B6 /* XCRemoteSwiftPackageReference "dotlottie-ios" */;
+			productName = DotLottie;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
